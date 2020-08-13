@@ -14,7 +14,14 @@
 	xiii) abece() - returns an abecedarian series
 	xiv) vowrem() - returns a string from the given string with all the vowels removed
 	xv) chrcount() - returns the occurrence of the given character in the given string
-	xvi) pattern - returns a pattern of specified condition"""
+	xvi) pyramid() - returns a pattern of specified condition
+	xvii) iscapitalised() - used to check whether the given string is in capitalised form or not
+	xviii) istitled() - checks whether the given string is in titled form
+	xix) splitchr() - used to split all the characters in the given string
+	xx) lalpha() - used to get the lowercase English alphabets
+	xxi) ualpha() - used to get the uppercase English alphabets
+	xxii) lalnum() - used to get the lowercase English alphabets with their number (1-26)
+	xxiii) ualnum() - used to get the uppercase English alphabets with their number (1-26)"""
 
 __all__=[wordcount, addpref, mirror, chrrem, strcat, swap, strrep, cwlcount, slicesub, ismem, ispalindrome, vowcons, vowrem, abece, chrcount, iscapitalised, istitled, splitchr, lalpha, ualpha, lalnum, ualnum]
 
@@ -179,7 +186,7 @@ def chrcount(s):
 #		i) align = 'left' - align the pattern with space to the left
 #		i) align = 'right' - align the pattern with space to the right
 #		i) align = 'center' - align the pattern with space to the center
-def pattern(a,b,space=False,align='left'):
+def pyramid(a,b,space=False,align='left'):
 	if space==False:
 		if align=='left':
 			for i in range(1,a+1):
@@ -209,13 +216,20 @@ def pattern(a,b,space=False,align='left'):
 				b=i*"* "
 				c=2*a1
 				print(b.center(c,' '))
-				
+
+# iscapitalised() - used to check whether the given string is in capitalised form or not
+# input - a string
+# output - True / False. True if the first character of each line in the given string is in uppercase and rest are in lowercase. False otherwise				
 def iscapitalised(a):
     if a[0].isupper() and a[1:].islower():
         return True
     else:
         return False
 
+
+#istitled() - checks whether the given string is in titled form
+# input - a string
+# output - True / False. True if the first character of each word is in uppercase and the rest are in lowercase. False otherwise
 def istitled(a):
     a1=a.replace('.','')
     b,c=a1.split(),0
@@ -227,6 +241,11 @@ def istitled(a):
     else:
         return False
 
+# splitchr() - used to split all the characters in the given string
+# inputs - a string and a parameter duplicate = True/False
+# output - gives a list with all the characters in the given string
+#	i) if duplicate==False, the duplicates are not removed
+#	ii) if duplicate==True, duplicates are removed
 def splitchr(a,duplicate=False):
     d=list()
     for i in a:
@@ -237,18 +256,30 @@ def splitchr(a,duplicate=False):
         e=list(set(d))
         return e
 
+# lalpha() - used to get the lowercase English alphabets
+# input - nil
+# output - a list containing all the lowercase English alphabets as its elements
 def lalpha():
     a=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     return a
 
+# ualpha() - used to get the uppercase English alphabets
+# input - nil
+# output - a list containing all the uppercase English alphabets as its elements
 def ualpha():
     a=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     return a
 
+# lalnum() - used to get the lowercase English alphabets with their number (1-26)
+# input - nil
+# output - a dictionary containing all the lowercase English alphabets as its keys and their number as their values i.e a - 1, b - 2, etc
 def lalnum():
     a={'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10,'k':11,'l':12,'m':13,'n':14,'o':15,'p':16,'q':17,'r':18,'s':19,'t':20,'u':21,'v':22,'w':23,'x':24,'y':25,'z':26}
     return a
 
+# ualnum() - used to get the uppercase English alphabets with their number (1-26)
+# input - nil
+# output - a dictionary containing all the uppercase English alphabets as its keys and their number as their values i.e A - 1, B - 2, etc
 def ualnum():
     a={'A':1,'B':2,'C':3,'D':4,'E':5,'F':6,'G':7,'H':8,'I':9,'J':10,'K':11,'L':12,'M':13,'N':14,'O':15,'P':16,'Q':17,'R':18,'S':19,'T':20,'U':21,'V':22,'W':23,'X':24,'Y':25,'Z':26}
     return a
