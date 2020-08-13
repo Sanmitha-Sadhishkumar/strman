@@ -15,6 +15,7 @@
 	xiv) vowrem() - returns a string from the given string with all the vowels removed
 	xv) chrcount() - returns the occurrence of the given character in the given string
 	xvi) pattern - returns a pattern of specified condition"""
+
 __all__=[wordcount, addpref, mirror, chrrem, strcat, swap, strrep, cwlcount, slicesub, ismem, ispalindrome, vowcons, vowrem, abece, chrcount, iscapitalised, istitled, splitchr, lalpha, ualpha, lalnum, ualnum]
 
 	
