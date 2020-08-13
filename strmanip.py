@@ -203,3 +203,39 @@ def pattern(a,b,space=False,align='left'):
 				b=i*"* "
 				c=2*a1
 				print(b.center(c,' '))
+def iscapitalised(a):
+    if a[0].isupper() and a[1:].islower():
+        return True
+    else:
+        return False
+def istitled(a):
+    a1=a.replace('.','')
+    b,c=a1.split(),0
+    for i in b:
+        if i[0].isupper() and i[1:].islower():
+            c+=1
+    if c==len(b):
+        return True
+    else:
+        return False
+def splitchr(a,duplicate=False):
+    d=list()
+    for i in a:
+        d.append(i)
+    if duplicate==False:
+        return d
+    if duplicate==True:
+        e=list(set(d))
+        return e
+def lalpha():
+    a=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    return a
+def ualpha():
+    a=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    return a
+def lalnum():
+    a={'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10,'k':11,'l':12,'m':13,'n':14,'o':15,'p':16,'q':17,'r':18,'s':19,'t':20,'u':21,'v':22,'w':23,'x':24,'y':25,'z':26}
+    return a
+def ualnum():
+    a={'A':1,'B':2,'C':3,'D':4,'E':5,'F':6,'G':7,'H':8,'I':9,'J':10,'K':11,'L':12,'M':13,'N':14,'O':15,'P':16,'Q':17,'R':18,'S':19,'T':20,'U':21,'V':22,'W':23,'X':24,'Y':25,'Z':26}
+    return a
