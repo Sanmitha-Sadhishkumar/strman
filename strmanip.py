@@ -112,6 +112,7 @@ def ismem(a,b):
 # input - a string
 # output - True / False. True if the given string is a palindrome. False otherwise
 def ispalindrome(a):
+	a = a.lower()
         if a==a[::-1]:
                 return True
         else:
