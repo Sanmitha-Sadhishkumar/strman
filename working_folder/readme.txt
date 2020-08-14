@@ -10,3 +10,4 @@ SETUP.py:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #the readme.md inside the repo is the long desription, should modify it after viewing some examples
 #i have applied the license to the main license file 
+#setup.py from python website is better i thought so i placed it in main
