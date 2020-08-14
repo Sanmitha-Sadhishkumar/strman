@@ -1,0 +1,80 @@
+"""These functionalities are commonly used by the people very often.
+    In all those cases, these functions will be very useful
+    . Some of the functions mentioned here have a long code.
+    Hence, they are helpful in compressing the code.
+    The available functions and their description are :
+    
+    i)  word count() - to count the occurrence of each word in the given string
+        input - one(a string)
+        output - a dictionary with words as keys and its occurrence as their values
+        
+    ii) addpref() - to add a prefix to each sentence of the given string
+        inputs - two(strings - a string and a prefix)
+        output - a list containing prefix added sentences as its elements
+
+    iii) chrrem() - to remove the mentioned character in the given string
+         inputs - two (strings - a string and a character to be removed)
+         output - a string from the main string with the mentioned character removed
+
+    iv) strrep() - to replace the occurrence of a string in the given string with a new string
+         inputs - three strings(a string, string to be replaced, string to be replaced with)
+         output - a string with the string to be replaced with the string to be replaced with
+
+    v) cwlcount() - to count the occurrence of each character, word and line in the given string
+        inputs - a string
+        output - a list containing dictionaries that contain keys as character or word or a line and their occurrence as their values
+
+    vi) slicesub() - gives the step by step slice of the given string
+         input - a string
+         output - step by step slices
+
+    vii) ismem() - returns whether the second string is found in the first string or not
+          inputs - two strings
+          output - True / False. True is second parameter is in the first parameter. False otherwise
+
+    viii) ispalindrome() - returns whether the given string is a palindrome or not
+           input - a string
+           output - True / False. True if the given string is a palindrome. False otherwise
+
+    ix) vowcons() - returns the number of vowels and consonants in the given string
+         input - a string
+         output - a dictionary with 'vowels' and 'consonants' as keys and their count as their values
+
+    x) abece() - returns an abecedarian series
+        input - a string
+        output - an abecedarian series with the given string
+
+    xi) vowrem() - returns a string from the given string with all the vowels removed
+         input - a string
+         output - a string from the main string with all the vowels removed
+
+    xii) chrcount() - returns the occurrence of the given character in the given string
+          inputs - a string 
+          output - a dictionary containing each character as keys and their occurrence as their values
+
+    xiii) pyramid() - returns a pattern of specified condition
+           inputs - four (an integer, a string, parameter space = True / False, parameter align = 'left' / 'right' / 'center')
+           output - returns a pattern based on the given condition
+	1) space - False 
+		i) align = 'left' - align the pattern without space to the left
+		i) align = 'right' - align the pattern without space to the right
+		i) align = 'center' - align the pattern without space to the center
+	1) space - True
+		i) align = 'left' - align the pattern with space to the left
+		i) align = 'right' - align the pattern with space to the right
+		i) align = 'center' - align the pattern with space to the center
+
+    xvii) iscapitalised() - used to check whether the given string is in capitalised form or not
+            input - a string
+            output - True / False. True if the first character of each line in the given string is in uppercase and rest are in lowercase. False otherwise				
+
+    xiv) istitled() - checks whether the given string is in titled form
+           input - a string
+           output - True / False. True if the first character of each word is in uppercase and the rest are in lowercase. False otherwise
+
+    xv) splitchr() - used to split all the characters in the given string/markdown
+          inputs - a string and a parameter duplicate = True/False
+         output - gives a list with all the characters in the given string
+	i) if duplicate==False, the duplicates are not removed
+	ii) if duplicate==True, duplicates are removed
+"""
