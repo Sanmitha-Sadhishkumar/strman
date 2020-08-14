@@ -1,4 +1,4 @@
-<h1>#strmanip</h1></br>
+<h1>#strman</h1></br>
 THE PYTHON PACKAGE TO MAKE STRING MANIPULATIONS EASIER</br>
 This file adds more **string functions** to python.</br>
     These functionalities are commonly used by the people very often.</br>
