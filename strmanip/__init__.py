@@ -1,1 +1,3 @@
-#dummy file to make this package
+import strmanip
+
+#string manipulations.
