@@ -1,3 +1,3 @@
-import strman
+from strman import *
 
 #string manipulations.
