@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="strman", 
-    version="0.0.5",
+    version="0.0.6",
     author="Sanmitha Sadhishkumar",
     author_email="sanmithasadhishkumar@gmail.com",
     description="This module gives additional string functions to make python programming easier than before",
