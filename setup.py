@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="strman", 
-    version="0.0.7",
+    version="0.0.8",
     author="Sanmitha Sadhishkumar",
     author_email="sanmithasadhishkumar@gmail.com",
     description="This module gives additional string functions to make python programming easier than before",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Sanmitha-Sadhishkumar/strman/tree/master/strman/strman.py",
+    url="https://github.com/Sanmitha-Sadhishkumar/strman/tree/master/strman",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
