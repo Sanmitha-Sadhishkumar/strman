@@ -11,7 +11,7 @@ setuptools.setup(
     description="This module gives additional string functions to make python programming easier than before",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Sanmitha-Sadhishkumar/strman/tree/master/strman",
+    url="https://github.com/Sanmitha-Sadhishkumar/strman/tree/master/strman/strman.py",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
