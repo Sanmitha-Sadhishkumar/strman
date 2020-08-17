@@ -1,2 +1,2 @@
-from strman import strman
+from strman import *
 
