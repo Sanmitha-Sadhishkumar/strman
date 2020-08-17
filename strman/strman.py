@@ -16,7 +16,7 @@
 	xiv) istitled() - checks whether the given string is in titled form
 	xv) splitchr() - used to split all the characters in the given string"""
 
-__all__=['wordcount','addpref','chrrem','strrep','cwlcount','slicesub','ismem','ispalindrome','vowcons','abece','vowrem','pyramid', 'iscapitalised', 'istitled', 'sliptchr']
+__all__=['wordcount','addpref','chrrem','strrep','cwlcount','slicesub','ismem','ispalindrome','vowcons','abece','vowrem','pyramid', 'iscapitalised', 'istitled', 'splitchr']
 	
 # word count() - to count the occurrence of each word in the given string
 # parameters - one(a string)
