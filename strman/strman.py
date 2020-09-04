@@ -16,10 +16,9 @@
 	xiv) istitled() - checks whether the given string is in titled form
 	xv) splitchr() - used to split all the characters in the given string
 	xvi) swapchar() - used to swap two characters in the given string
-	xvii) char_rotate() - used to rotate a particular character in the given string
-	xviii) int_str()  - used to convert the given int value to str"""
+	xvii) char_rotate() - used to rotate a particular character in the given string"""
 
-__all__=['wordcount','add_linepref','chrrem','strrep','cwlcount','slicesub','ismem','ispalindrome','vowcons','abece','vowrem','pyramid', 'iscapitalised', 'istitled', 'splitchr','swapchar','char_rotate','int_str']
+__all__=['wordcount','add_linepref','chrrem','strrep','cwlcount','slicesub','ismem','ispalindrome','vowcons','abece','vowrem','pyramid', 'iscapitalised', 'istitled', 'splitchr','swapchar','char_rotate']
 
 # word count() - to count the occurrence of each word in the given string
 # parameters - one(a string)
@@ -324,19 +323,3 @@ def char_rotate(a,b):
                         g=e+b+f
                         d.append(g)
                 return d
-
-# int_str() - used to convert the given int value to str
-# input - an integer
-# output - returns the given integer as string i.e 1 as '1'
-def int_str(a):
-        if isinstance(a,int)==False:
-                raise TypeError("invalid argument for type 'str'")
-        else:
-                b=''
-                while a:
-                        r=a%10
-                        b=b+chr(48+r)
-                        a//=10
-                b=b[::-1]
-                return b
-
