@@ -1,4 +1,5 @@
 <h1>#strman</h1></br>
+
 THE PYTHON PACKAGE TO MAKE STRING MANIPULATIONS EASIER</br>
 This file adds more **string functions** to python.</br>
     These functionalities are commonly used by the people very often.</br>
@@ -6,7 +7,7 @@ This file adds more **string functions** to python.</br>
     Some of the functions mentioned here have a long code.</br>
     Hence, they are helpful in compressing the code.</br>
     The available functions and their description are :</br>
-    i) word count() - to count the occurrence of each word in the given string</br>
+    	i) word count() - to count the occurrence of each word in the given string</br>
 	ii) addpref() - to add a prefix to each sentence of the given string</br>
 	iii) chrrem() - to remove the mentioned character in the given string</br>
 	iv) strrep() - to replace the occurrence of a string in the given string with a new string</br>
@@ -22,3 +23,5 @@ This file adds more **string functions** to python.</br>
 	xvii) iscapitalised() - used to check whether the given string is in capitalised form or not</br>
 	xiv) istitled() - checks whether the given string is in titled form</br>
 	xv) splitchr() - used to split all the characters in the given string/markdown</br>
+
+<H2>#HappieeProgramming</H2>
